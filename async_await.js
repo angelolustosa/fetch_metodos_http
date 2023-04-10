@@ -5,7 +5,7 @@ const getPosts = async () => {
     console.log(data)
 }
 
-getPosts();
+//getPosts();
 
 const newPost = async () => {
     const url = 'https://jsonplaceholder.typicode.com/posts';
@@ -28,5 +28,12 @@ const newPost = async () => {
     console.log(data)
 }
 
-newPost();
+//newPost();
+
+const updatePost = async (id) => {
+
+    const url = `https://jsonplaceholder.typicode.com/posts/${id}`;
+
+    fetch(url, option, headers)
+}
 
